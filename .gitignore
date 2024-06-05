@@ -1,0 +1,29 @@
+# Turborepo
+.turbo
+
+# dependencies
+/node_modules
+
+# IDE related
+.vscode
+
+# testing
+/coverage
+/test/e2e/config/credentials.ts
+/test/e2e/cache_latest_credentials.json
+/test/cypress/screenshots
+/test/cypress/downloads
+
+# production
+/build
+/dist
+
+
+# misc
+.DS_Store
+.env
+notes.md
+
+
+# auto-generated config
+public/config.js
