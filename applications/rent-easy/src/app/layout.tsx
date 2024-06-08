@@ -1,15 +1,15 @@
-import type { Metadata, Viewport } from "next";
+import type { Viewport } from 'next';
 
-import "~/app/globals.css";
+import '~/app/globals.css';
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
 };
 
-export default function RootLayout(props: { children: React.ReactNode }) {
+export default function RootLayout() {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>

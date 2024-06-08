@@ -7,8 +7,7 @@
     "build": "pnpm with-env next build",
     "clean": "git clean -xdf .next .turbo node_modules",
     "dev": "pnpm next dev",
-    "format": "prettier --check . --ignore-path ../../.gitignore",
-    "lint": "eslint",
+    "lint": "biome check .",
     "start": "pnpm with-env next start",
     "typecheck": "tsc --noEmit"
   },
@@ -26,11 +25,11 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.0",
     "@types/node": "^20.12.9",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "dotenv-cli": "^7.4.2",
-    "eslint": "^9.2.0",
     "jiti": "^1.21.0",
     "prettier": "^3.2.5",
     "tailwindcss": "^3.4.3",
