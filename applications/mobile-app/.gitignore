@@ -3,3 +3,9 @@
 
 expo-env.d.ts
 # @end expo-cli
+
+
+# misc
+.DS_Store
+.env
+notes.md
