@@ -1,6 +1,13 @@
 import type { Viewport } from 'next';
 
-import '~/app/globals.css';
+import { Inter as FontSans } from 'next/font/google';
+
+import { cn } from '@/lib/utils';
+
+const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+});
 
 export const viewport: Viewport = {
   themeColor: [
@@ -12,7 +19,12 @@ export const viewport: Viewport = {
 export default function RootLayout() {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body
+        className={cn(
+          'min-h-screen bg-background font-sans antialiased',
+          fontSans.variable,
+        )}
+      >
         <div>Rent Easy</div>
       </body>
     </html>
