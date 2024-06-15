@@ -5,3 +5,7 @@
 .DS_Store
 .env
 notes.md
+
+# next.js
+/.next/
+/out/
