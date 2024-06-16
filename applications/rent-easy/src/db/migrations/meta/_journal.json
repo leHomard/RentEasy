@@ -8,6 +8,13 @@
       "when": 1718544382354,
       "tag": "0000_fixed_micromacro",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1718550130967,
+      "tag": "0001_chief_steel_serpent",
+      "breakpoints": true
     }
   ]
 }
